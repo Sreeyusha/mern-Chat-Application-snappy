@@ -8,6 +8,23 @@ const messageRoute = require("./routes/messagesRoute");
 const app = express();
 require("dotenv").config();
 
+// const allowedOrigins = [
+//     "http://localhost:3000",
+//     "https://mern-chat-application-snappy.onrender.com"
+//   ];
+  
+//   // CORS middleware configuration
+//   const corsOptions = {
+//     origin: function (origin, callback) {
+//       // Check if the request origin is in the list of allowed origins
+//       if (!origin || allowedOrigins.includes(origin)) {
+//         callback(null, true);
+//       } else {
+//         callback(new Error('Not allowed by CORS'));
+//       }
+//     }
+//   };
+
 app.use(cors());
 app.use(express.json());
 
